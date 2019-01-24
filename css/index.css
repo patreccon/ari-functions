@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.header{
+    align-items:center;
+    background-color:#4788EF;
+    display:flex;
+    height:70px;
+
+    justify-content:space-between;
+}
+.menu{
+}
+.menu ol {
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    padding:0;
+    margin:0;
+    width:150px;
+}
+.menu ol li a {
+    text-decoration: none;
+    color:white;
+}
+.logo{
+    color:white;
+}
