@@ -28,3 +28,56 @@ body{
 .logo{
     color:white;
 }
+.principal{
+    align-items:center;
+    height:80vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    position:relative;
+}
+.operators {
+    align-items: center;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content:center;
+    /* width:100%; */
+}
+.operations{
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    /* width:100%; */
+    padding: 40px 20px;
+
+}
+.numberBox{
+    border:1px solid gray;
+    border-radius:20px;
+    font-size:80px;
+    width:140px;
+    height:100px;
+    outline:none;
+}
+.notation{
+    /* transform: rotate(-90deg) translate(0px,-400px); */
+    position:absolute;
+    top: 330px;
+    left: 350px;
+    transform: rotate(-90deg);
+
+}
+button{
+    padding:10px;
+    margin-right:10px;
+    border-radius:15px; 
+}
+.container{
+    align-items:inherit;
+    display:inherit;
+    justify-content:inherit;
+    height:inherit;
+    margin:0 auto;
+    width:1000px;
+}

@@ -11,31 +11,38 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">Ari-Functions</div>
-        <nav class="menu">
-            <ol>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ol>
-        </nav>
+        <div class="container">
+            <div class="logo">Ari-Functions</div>
+            <nav class="menu">
+                <ol>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ol>
+            </nav>
+        </div>
     </header>
 
     <section class="principal">
-        <input type="text" placeholder="numero1" class="numberBox">
-        <label id="signo">+</label>
-        <input type="text" placeholder="numero2" class="numberBox">
-        <label>=</label>
-        <input type="text" placeholder="resultado" class="numberBox">
+        <div class="content">
+            <div class="operators">
+                <input type="text"  class="numberBox" id="numero1">
+                <label id="signo">+</label>
+                <input type="text"  class="numberBox" id="numero2">
+                <label>=</label>
+                <input type="text"  class="numberBox" id="resultado">
+            </div>
+            <div class="operations">
+                <button id="suma">Suma</button>
+                <button id="resta">Resta</button>
+                <button id="multiplicacion">Multiplicación</button>
+                <button id="division">División</button>
+                <button id="limpiar">Limpiar</button>
+            </div>
+        </div>
+    <div class="notation">Operaciones</div>
+
     </section>
 
-    <section class="botones">
 
-        <button id="suma">Suma</button>
-        <button id="resta">Resta</button>
-        <button id="multiplicacion">Multiplicación</button>
-        <button id="division">División</button>
-        <div>Operaciones</div>
-
-    </section>
 </body>
 </html>
