@@ -8,22 +8,35 @@ body{
     background-color:#4788EF;
     display:flex;
     height:70px;
-
+    flex-wrap:wrap;
     justify-content:space-between;
 }
 .menu{
+    height:inherit;
 }
 .menu ol {
     list-style: none;
     display:flex;
+    height:inherit;
     justify-content:space-between;
     padding:0;
     margin:0;
     width:150px;
 }
+.menu ol li {
+    height:inherit;
+}
 .menu ol li a {
-    text-decoration: none;
+    align-items:center;
     color:white;
+    display:flex;
+    height:inherit;
+    padding:0 10px;
+    text-decoration: none;
+}
+.menu ol li a:hover {
+    background-color:white;
+    color:darkblue;
 }
 .logo{
     color:white;
@@ -40,6 +53,7 @@ body{
     align-items: center;
     /* border:1px solid red; */
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     /* width:100%; */
 }
@@ -47,6 +61,7 @@ body{
     /* border:1px solid red; */
     box-sizing: border-box;
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     /* width:100%; */
     padding: 40px 20px;
@@ -79,5 +94,75 @@ button{
     justify-content:inherit;
     height:inherit;
     margin:0 auto;
-    width:1000px;
+    max-width:1000px;
+    flex:1;
+}
+.content{
+    max-width:1000px;
+    flex:1;    
+}
+
+@media screen and (max-width:1023px){
+    
+}
+@media screen and (max-width:767px){
+    .header{
+
+    }
+    .notation{
+        top:60%;
+        left:15%;
+    }
+    .operators{
+        width:100%;
+    }    
+}
+@media screen and (max-width:480px){
+ .notation{
+     left:-5%;
+ }   
+}
+@media screen and (max-width:320px){
+    .header{
+        display:block;
+        height:auto;
+        width:100%;
+    }
+    .header .menu ol{
+        display:block;  
+    }
+    .operators{
+        /* width:80%; */
+    }
+    .operations{
+        /* width:80%; */
+    }
+    .logo{
+        padding-top:10px;
+        text-align:center;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .menu ol {
+        width:100%;
+    }
+    .menu ol li a {
+        border-bottom:white 1px solid;
+        height:40px;
+        justify-content:center;
+    }
+    button{
+        margin-right:10px;
+        margin-bottom:10px;
+
+    }
+    .notation{
+        left:-11%;
+        top:70%;
+    }
+    .numberBox{
+        margin-bottom:10px;
+    }
+
 }
